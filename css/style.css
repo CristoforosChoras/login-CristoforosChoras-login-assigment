@@ -3,3 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+#out-container{
+    border: 2px solid black;
+    width: 35rem;
+    height: 15rem;
+}
+.bottom-container{
+    position: relative;
+    border: 1px solid red;
+    height: 2rem;
+}
+.right-container{
+    border: 2px solid green;
+    position: relative;
+    left: 17.5rem;
+    width: 17.5rem;
+    height: 13rem;
+}
+.left-container{
+    
+}
