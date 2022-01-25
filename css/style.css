@@ -75,3 +75,16 @@
     position: absolute;
     top: 10rem;
 }
+fieldset > div{
+    border: 2px solid black;
+    margin-top: 2.4rem;
+}
+.login{
+    display: flex;
+    position: absolute;
+    left: 11rem;
+    top: 9rem;
+}
+h3{
+    text-align: center;
+}
