@@ -76,14 +76,22 @@
     top: 10rem;
 }
 fieldset > div{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-top: 2.4rem;
 }
-.login{
+div input {
+    border:none;
+    border-bottom: solid 1px gray;
+}
+.login input{
     display: flex;
     position: absolute;
-    left: 11rem;
-    top: 9rem;
+    left: 10rem;
+    top: 10.4rem;
+    background-color: #4267B2;
+    border-radius: 4px;
+    border: none;
+    padding: 0.5rem 1rem
 }
 h3{
     text-align: center;
