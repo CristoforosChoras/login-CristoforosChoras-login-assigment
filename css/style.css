@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 #out-container{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 35rem;
     height: 15rem;
 }
@@ -16,7 +16,7 @@
     width: 35rem;
 }
 .right-container{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     position: absolute;
     top: 0;
     left: 19rem;
@@ -24,17 +24,18 @@
     height: 13rem;
 }
 .left-container{
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     position: absolute;
     width: 16rem;
     height: 13rem;
 }
 .middle-container{
-    border-left: 1px solid black;
+    border-left: 1px solid gray;
     position: absolute;
     top:1.75rem;
     left: 17.5rem;
     height: 10rem;
+    
 }
 .button1{
     border-radius: 4px;
@@ -56,7 +57,7 @@
 }
 .button3{
     border-radius: 4px;
-    border: solid 1px #95b7e0;
+    /* border: solid 1px #95b7e0; */
     background: #96b7e0;
     color: #FFF;
     padding: 1rem 3.4rem;
@@ -75,7 +76,7 @@
     position: absolute;
     top: 10rem;
 }
-fieldset > div{
+section > div{
     /* border: 2px solid black; */
     margin-top: 2.4rem;
 }
@@ -94,5 +95,22 @@ div input {
     padding: 0.5rem 1rem
 }
 h3{
-    text-align: center;
+    text-align: center;}
+.left-container span{
+   border-left:1px solid gray;
+}
+.middle-container span{
+  position: relative;
+  top:4rem;
+  right:12px;
+  border: 2px solid black;
+  border-radius: 100% ;
+  width: 3rem;
+  height: 3rem;
+  opacity: 1;
+} 
+.bottom-container > span{
+    display: flex;
+    border-left:2px solid black;
+
 }
