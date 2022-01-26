@@ -55,10 +55,11 @@ div input {
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
 .middle-container div{
     border-left: 2px gray solid;
-    height: 15rem;
+    height: 13rem;
+    opacity: 0.4;
 }
 .left-container{
     display: flex;
@@ -78,9 +79,9 @@ div input {
     height: 1.6rem;
     margin-right: 1rem;
     margin-left: 1rem;
+    opacity: 0.4;
 }
 .button1{
-    border-radius: 4px;
     border: solid 1px #4267B2;
     background: #4267B2;
     color: #FFF;
@@ -89,7 +90,6 @@ div input {
     margin-left: 0.6rem;
 }
 .button2{
-    border-radius: 4px;
     border: solid 1px rgb(160, 56, 56);
     background: rgb(160, 56, 56);
     color: #FFF;
@@ -98,11 +98,23 @@ div input {
     margin-left: 0.6rem;
 }
 .button3{
-    border-radius: 4px;
     border: solid 1px #95b7e0;
     background: #96b7e0;
     color: #FFF;
     padding: 1rem 3.4rem;
     text-decoration: none;
     margin-left: 0.6rem;
+}
+.or{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px gray solid;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+}
+p{
+    margin-left: 5px;
 }
