@@ -155,7 +155,7 @@ i{
 }
 /* bottom container styles */
 .bottom-container #line{
-    border-left: 2px gray solid;
+    border-left: 1px gray solid;
     height: 1rem;
     margin-right: 2.3rem;
     margin-left: 1rem;
