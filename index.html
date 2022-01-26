@@ -9,27 +9,45 @@
     <title>login form</title>
 </head>
 <body>
+    <!-- starting with section  -->
     <section id="out-container">
+        <!-- inside the section is 4 containers -->
+        <!-- left-middle-right-bottom containers -->
         <div class="left-container">
+            <!-- inside the left-container is 3 divs  -->
+            <!-- the divs has the id top-middle-bottom as it is display in the browser -->
+            <!-- button1-button3-button4 is anchor tags -->
+            <!-- for the small line between the text and the icon i used a span -->
             <div id="top">
                 <a href="" 
                 class="button1"><i class="fab fa-facebook-square"></i><span></span> Facebook login</a>
             </div>
             <div id="middle">
                 <a href="" 
-                class="button2"><i class="fab fa-google-plus-square"></i><span></span>Google + login</a>
+                class="button2">
+                <i class="fab fa-google-plus-square"></i>
+                <span></span>
+                Google + login</a>
             </div>
             <div id="bottom">
                 <a href="" 
-                class="button3"><i class="fab fa-twitter-square"></i><span></span>Twitter login</a>
+                class="button3">
+                    <i class="fab fa-twitter-square">
+                    </i><span></span>
+                    Twitter login</a>
             </div>
-        </div>
-        <div class="middle-container">
-            <div class="middle"><span class="or">Or</span></div>
          </div>
-        <div class="right-container"> 
+         <div class="middle-container">
+            <div class="middle">
+                <span class="or">Or</span>
+            </div>
+         </div>
+          <div class="right-container"> 
+              
             <h3>Sign in with</h3>
-             <form class="form" action="index.js"method="GET">
+             <form class="form" 
+             action="index.js"
+             method="GET">
                   <div class="username">
                       <input type="text" 
                       placeholder=" &#128100; Username or email">
@@ -50,18 +68,21 @@
                                 <input 
                                 class="submit-login" 
                                 type="submit" 
-                                value="Login"></div>
-                        </div>
+                                value="Login">
+                            </div>
+                     </div>
             </form>
+         </div>
+         <div class="bottom-container">
+            <a href="">
+                Register now</a>
+            <div 
+            id="line">
+            </div>
+            <a href="">
+                Forgoten?</a>
+         </div>
         </div>
-        <div class="bottom-container">
-            <a href="">Register now</a>
-            <div id="line"></div>
-            <a href="">Forgoten?</a>
-        </div>
-    </div>
-</section> 
-
-
+    </section> 
 </body>
 </html>
