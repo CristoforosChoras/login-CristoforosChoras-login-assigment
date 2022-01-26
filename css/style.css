@@ -98,7 +98,7 @@ div input {
     border: solid 1px rgb(160, 56, 56);
     background: rgb(160, 56, 56);
     color: #FFF;
-    padding: 1rem 3rem;
+    padding: 1rem 3.1rem;
     text-decoration: none;
     margin-left: 0.6rem;
 }
@@ -106,7 +106,7 @@ div input {
     border: solid 1px #95b7e0;
     background: #96b7e0;
     color: #FFF;
-    padding: 1rem 3.4rem;
+    padding: 1rem 3.58rem;
     text-decoration: none;
     margin-left: 0.6rem;
 }
@@ -121,4 +121,13 @@ div input {
     height: 2rem;
     text-align: center;
     justify-content: center;
+}
+i{
+    font-size: 1.5rem;
+    position: relative;
+    right:10px;
+}
+#bottom i{
+    position: relative;
+    right:16px;
 }
