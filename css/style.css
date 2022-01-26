@@ -1,26 +1,37 @@
+/* main page reset default styles */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
  } 
- #out-container{
-    width: 35rem;
-    height: 20rem;
+ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80vh;
+    width: 100vw;
+ }
+ /* out countainer size and display */
+ #out-container{
+    border: 1px black solid;
+    width: 34rem;
+    height: 20rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
-.right-container , .left-container{
-    width: 15.3rem;
-    height: 17rem;
+/* left-middle-right-bottom container sizing and display */
+/* the styles begin form left-middle-right-bottom */
+.left-container, .right-container {
+    width: 15.2rem;
+    height: 15rem;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 } 
 .middle-container{
-    width: 4rem;
-    height: 17rem; 
+    width: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,17 +41,93 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1.7rem;
     margin-top: -3rem;
-    width: 35rem;
+    width: 32rem;
     height: 2.3rem;
 }
+/* left container styles */
+.button1{
+    border: solid 1px #4267B2;
+    background: #4267B2;
+    color: #FFF;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    margin-left: 0.6rem;
+}
+.button2{
+    border: solid 1px rgb(160, 56, 56);
+    background: rgb(160, 56, 56);
+    color: #FFF;
+    padding: 1rem 3.1rem;
+    text-decoration: none;
+    margin-left: 0.6rem;
+}
+.button3{
+    border: solid 1px #95b7e0;
+    background: #96b7e0;
+    color: #FFF;
+    padding: 1rem 3.58rem;
+    text-decoration: none;
+    margin-left: 0.6rem;
+}
+#top span{
+    border-left: 1px rgb(124, 121, 121) solid;
+    position: relative;
+    right: 1px
+}
+#middle span{
+    border-left: 1px rgb(124, 121, 121) solid;
+    position: relative;
+    right: 2px
+}
+#bottom span{
+    border-left: 1px rgb(124, 121, 121) solid;
+    position: relative;
+    right: 5px
+}
+/* this is the styles for the icon on the button*/
+i{
+    font-size: 1.5rem;
+    position: relative;
+    right: 10px;
+    top: 4px;
+}
+#bottom i{
+    position: relative;
+    right:16px;
+    top: 2px;
+}
+/* middle container styles */
+.middle-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px gray solid;
+    height: 13rem;
+    opacity: 0.7;
+}
+/* this is the span with the class or */
+.or{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px gray solid;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+/* right container styles  */
 .row{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
     margin-right: 1rem;
 }
-div input{
+.right-form form div input{
     border:none;
     border-bottom: solid 1px gray;
     height: 2rem;
@@ -66,86 +153,15 @@ div input{
     border: none;
     padding: 0.5rem 1.1rem
 }
-
-.middle-container div{
-    border-left: 2px gray solid;
-    height: 13rem;
-    opacity: 0.7;
-}
-.middle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* bottom container styles */
 .bottom-container #line{
     border-left: 2px gray solid;
     height: 1rem;
-    margin-right: 1rem;
+    margin-right: 2.3rem;
     margin-left: 1rem;
     opacity: 0.7;
 }
-.button1{
-    border: solid 1px #4267B2;
-    background: #4267B2;
-    color: #FFF;
-    padding: 1rem 3rem;
-    text-decoration: none;
-    margin-left: 0.6rem;
-}
-.button2{
-    border: solid 1px rgb(160, 56, 56);
-    background: rgb(160, 56, 56);
-    color: #FFF;
-    padding: 1rem 3.1rem;
-    text-decoration: none;
-    margin-left: 0.6rem;
-}
-.button3{
-    border: solid 1px #95b7e0;
-    background: #96b7e0;
-    color: #FFF;
-    padding: 1rem 3.58rem;
-    text-decoration: none;
-    margin-left: 0.6rem;
-}
-.or{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border: 1px gray solid;
-    border-radius: 100%;
-    width: 2rem;
-    height: 2rem;
-    text-align: center;
-    justify-content: center;
-}
-i{
-    font-size: 1.5rem;
-    position: relative;
-    right: 10px;
-    top: 4px;
-}
-#bottom i{
-    position: relative;
-    right:16px;
-    top: 2px;
-}
-#top span{
-    border-left: 1px rgb(124, 121, 121) solid;
-    position: relative;
-    right: 1px
-}
-#middle span{
-    border-left: 1px rgb(124, 121, 121) solid;
-    position: relative;
-    right: 2px
-}
-#bottom span{
-    border-left: 1px rgb(124, 121, 121) solid;
-    position: relative;
-    right: 5px
-}
+/* anchor pseudo classes */
 .left-container a:visited{
     text-decoration: none;
     color: white;
