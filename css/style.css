@@ -21,15 +21,13 @@
     border: 2px black solid;
     width: 4rem;
     height: 17rem; 
-}
-.middle-container > div{ 
-    border: 2px black solid;
-}
-.edo{
-    border-left: 1px solid gray;
-    top:1.75rem;
-    left: 17.5rem;
-    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.middle-container div{
+    border-left: 2px gray solid;
+    height: 15rem;
 }
 .bottom-container{
     border: 2px blue solid;
