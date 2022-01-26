@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: left;
     height: 80vh;
     width: 100vw;
  }
@@ -43,7 +44,7 @@
     align-items: center;
     margin-top: -3rem;
     width: 32rem;
-    height: 2.3rem;
+    height: 2.5rem;
 }
 /* left container styles */
 .button1{
@@ -73,17 +74,17 @@
 #top span{
     border-left: 1px rgb(124, 121, 121) solid;
     position: relative;
-    right: 1px
+    right: 0.5px
 }
 #middle span{
     border-left: 1px rgb(124, 121, 121) solid;
     position: relative;
-    right: 2px
+    right: 3.5px
 }
 #bottom span{
     border-left: 1px rgb(124, 121, 121) solid;
     position: relative;
-    right: 5px
+    right: 5.5px
 }
 /* this is the styles for the icon on the button*/
 i{
@@ -154,12 +155,22 @@ i{
     padding: 0.5rem 1.1rem
 }
 /* bottom container styles */
-.bottom-container #line{
-    border-left: 1px gray solid;
-    height: 1rem;
-    margin-right: 2.3rem;
+.bottom-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    margin-right: 2.2rem;
     margin-left: 1rem;
     opacity: 0.7;
+}
+/* #line is a div for the line between register now and forgoten */
+#line{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-left: 1px gray solid;
+    height: 1.3rem;
 }
 /* anchor pseudo classes */
 .left-container a:visited{
@@ -176,3 +187,4 @@ a:link{
 input{
     outline: none;
 }
+
