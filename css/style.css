@@ -83,7 +83,7 @@ div input {
     height: 1.6rem;
     margin-right: 1rem;
     margin-left: 1rem;
-    opacity: 0.4;
+    opacity: 0.7;
 }
 .button1{
     border: solid 1px #4267B2;
@@ -110,7 +110,7 @@ div input {
     margin-left: 0.6rem;
 }
 .or{
-    /* position: absolute; */
+    position: absolute;
     display: flex;
     align-items: center;
     background-color: white;
@@ -119,4 +119,5 @@ div input {
     width: 2rem;
     height: 2rem;
     text-align: center;
+    justify-content: center;
 }
