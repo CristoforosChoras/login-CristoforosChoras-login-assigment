@@ -14,7 +14,7 @@
         <!-- inside the section is 4 containers -->
         <!-- left-middle-right-bottom containers -->
         <div class="left-container">
-            <!-- inside the left-container is 3 divs  -->
+            <!-- inside the left-container we have 3 divs  -->
             <!-- the divs has the id top-middle-bottom as it is display in the browser -->
             <!-- button1-button3-button4 is anchor tags -->
             <!-- for the small line between the text and the icon i used a span -->
@@ -38,39 +38,47 @@
             </div>
          </div>
          <div class="middle-container">
+             <!-- inside the middle container we have 1 div -->
+             <!-- middle-container is the line between the form and the buttons for more details check the comments in css file -->
+             <!-- inside middle div i used a span for the text or -->
             <div class="middle">
                 <span class="or">Or</span>
             </div>
          </div>
           <div class="right-container"> 
-              
+              <!-- for the right container i used form -->
+              <!-- inside the form we have 4 divs all the divs has inside an input-->
+              <!-- input username and password is column -->
+              <!-- checkbox and login is row  -->
             <h3>Sign in with</h3>
              <form class="form" 
              action="index.js"
              method="GET">
-                  <div class="username">
-                      <input type="text" 
+                    <div class="username">
+                      <input 
+                      type="text" 
                       placeholder=" &#128100; Username or email">
                     </div>
                     <div class="password">
                         <input 
                         type= "password"
                         placeholder=" &#128274; Password">
+                    </div>
+                    <div class="row">
+                        <div class="checkbox">
+                            <input 
+                            type="checkbox"> 
+                        <div>
+                            <span>Remembe me</span> 
                         </div>
-                        <div class="row">
-                            <div class="checkbox">
-                                <input type="checkbox"> 
-                                 <div>
-                                 <span>Remembe me</span> 
-                                 </div>
-                            </div>
-                            <div class="login">
-                                <input 
-                                class="submit-login" 
-                                type="submit" 
-                                value="Login">
-                            </div>
-                     </div>
+                    </div>
+                    <div class="login">
+                            <input 
+                            class="submit-login" 
+                            type="submit" 
+                            value="Login">
+                        </div>
+                    </div>
             </form>
          </div>
          <div class="bottom-container">

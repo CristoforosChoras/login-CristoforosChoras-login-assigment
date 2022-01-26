@@ -7,16 +7,33 @@
     width: 35rem;
     height: 20rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-} 
- .right-container , .left-container{
+}
+.right-container , .left-container{
     width: 15.3rem;
     height: 17rem;
-} 
-.right-container{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+} 
+.middle-container{
+    width: 4rem;
+    height: 17rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-container{
+    background-color: rgb(241, 237, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.7rem;
+    margin-top: -3rem;
+    width: 35rem;
+    height: 2.3rem;
 }
 .row{
     display: flex;
@@ -49,13 +66,7 @@ div input{
     border: none;
     padding: 0.5rem 1.1rem
 }
-.middle-container{
-    width: 4rem;
-    height: 17rem; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .middle-container div{
     border-left: 2px gray solid;
     height: 13rem;
@@ -66,21 +77,6 @@ div input{
     align-items: center;
     justify-content: center;
 }
-.left-container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-.bottom-container{
-    background-color: rgb(241, 237, 237);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1.7rem;
-    margin-top: -3rem;
-    width: 39rem;
-    height: 1.5rem;
-} 
 .bottom-container #line{
     border-left: 2px gray solid;
     height: 1rem;
