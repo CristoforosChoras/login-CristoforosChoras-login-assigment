@@ -23,7 +23,7 @@
     justify-content: space-evenly;
     margin-right: 1rem;
 }
-div input {
+div input{
     border:none;
     border-bottom: solid 1px gray;
     height: 2rem;
@@ -72,16 +72,18 @@ div input {
     flex-direction: column;
 }
 .bottom-container{
+    background-color: rgb(241, 237, 237);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 6.8rem;
-    width: 20rem;
-    height: 2.8rem;
+    margin-right: 1.7rem;
+    margin-top: -3rem;
+    width: 39rem;
+    height: 1.5rem;
 } 
 .bottom-container #line{
     border-left: 2px gray solid;
-    height: 1.6rem;
+    height: 1rem;
     margin-right: 1rem;
     margin-left: 1rem;
     opacity: 0.7;
@@ -148,5 +150,17 @@ i{
     position: relative;
     right: 5px
 }
-
-
+.left-container a:visited{
+    text-decoration: none;
+    color: white;
+}
+a:link{
+    text-decoration: none;
+}
+.bottom-container a:visited{
+    color: rgb(0, 119, 255);
+    text-decoration: none;
+}
+input{
+    outline: none;
+}
