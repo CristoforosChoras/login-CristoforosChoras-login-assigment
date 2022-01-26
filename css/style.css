@@ -4,14 +4,12 @@
     box-sizing: border-box; 
  } 
  #out-container{
-    border: 2px black solid;
     width: 35rem;
     height: 20rem;
     display: flex;
     flex-wrap: wrap;
 } 
  .right-container , .left-container{
-    border: 2px red solid;
     width: 15.3rem;
     height: 17rem;
 } 
@@ -21,26 +19,37 @@
     flex-direction: column;
     align-items: ;
 }
-h3{
-    align-self: center;
-    margin-bottom: 5rem;
-}
-.space{
-    border: 2px blue solid;
-    height:;
-}
-/* .form{
+.row{
     display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
-} */
-/* .form2{
+    margin-right: 1rem;
+}
+div input {
+    border:none;
+    border-bottom: solid 1px gray;
+    height: 2rem;
+}
+.username{
+    height:4rem;
+}
+.password{
+    height:4rem;
+}
+.checkbox{
     display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
-} */
+    align-items:center;
+}
+.span{
+    margin-left: 1rem;
+}
+.submit-login{
+    background-color: #4267B2;
+    border-radius: 4px;
+    border: none;
+    padding: 0.5rem 1rem
+}
 .middle-container{
-    border: 2px black solid;
     width: 4rem;
     height: 17rem; 
     display: flex;
@@ -57,11 +66,9 @@ h3{
     flex-direction: column;
 }
 .bottom-container{
-    border: 2px blue solid;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* justify-content: space-around; */
     margin-left: 6.8rem;
     width: 20rem;
     height: 2.8rem;
@@ -69,9 +76,7 @@ h3{
 .bottom-container #line{
     border-left: 2px gray solid;
     height: 1.6rem;
-    
     margin-right: 1rem;
-    /* padding-right: 1rem; */
     margin-left: 1rem;
 }
 .button1{
