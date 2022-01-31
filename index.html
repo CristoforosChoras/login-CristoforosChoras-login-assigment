@@ -9,52 +9,90 @@
     <title>login form</title>
 </head>
 <body>
-    <div id="out-container">
+    <!-- starting with section  -->
+    <section id="out-container">
+        <!-- inside the section is 4 containers -->
+        <!-- left-middle-right-bottom containers -->
         <div class="left-container">
+            <!-- inside the left-container we have 3 divs  -->
+            <!-- the divs has the id top-middle-bottom as it is display in the browser -->
+            <!-- button1-button3-button4 is anchor tags -->
+            <!-- for the small line between the text and the icon i used a span -->
             <div id="top">
                 <a href="" 
-                class="button1"><i class="fab fa-facebook-square"></i>&nbsp;<span></span>&nbsp;Facebook login</a>
+                class="button1"><i class="fab fa-facebook-square"></i><span></span> Facebook login</a>
             </div>
             <div id="middle">
                 <a href="" 
-                class="button2"><i class="fab fa-google-plus-square"></i>&nbsp;<span></span>&nbsp;Google + login</a>
+                class="button2">
+                <i class="fab fa-google-plus-square"></i>
+                <span></span>
+                Google + login</a>
             </div>
             <div id="bottom">
                 <a href="" 
-                class="button3"><i class="fab fa-twitter-square"></i>&nbsp;<span></span>&nbsp;Twitter  login</a>
+                class="button3">
+                    <i class="fab fa-twitter-square">
+                    </i><span></span>
+                    Twitter login</a>
             </div>
+         </div>
+         <div class="middle-container">
+             <!-- inside the middle container we have 1 div -->
+             <!-- middle-container is the line between the form and the buttons for more details check the comments in css file -->
+             <!-- inside middle div i used a span for the text or -->
+            <div class="middle">
+                <span class="or">Or</span>
+            </div>
+         </div>
+          <div class="right-container"> 
+              <!-- for the right container i used form -->
+              <!-- inside the form we have 4 divs all the divs has inside an input-->
+              <!-- input username and password is column -->
+              <!-- checkbox and login is row  -->
+             <h3>Sign in with</h3>
+             <section class="right-form">
+                <form class="" 
+                action="index.js"
+                method="GET">
+                       <div class="username">
+                         <input 
+                         type="text" 
+                         placeholder=" &#128100; Username or email">
+                       </div>
+                       <div class="password">
+                           <input 
+                           type= "password"
+                           placeholder=" &#128274; Password">
+                       </div>
+                       <div class="row">
+                           <div class="checkbox">
+                               <input 
+                               type="checkbox"> 
+                           <div>
+                               <span>Remembe me</span> 
+                           </div>
+                       </div>
+                       <div class="login">
+                               <input 
+                               class="submit-login" 
+                               type="submit" 
+                               value="Login">
+                           </div>
+                       </div>
+               </form>
+             </section>
+         </div>
+         <div class="bottom-container">
+            <a href="">
+                Register now</a>
+            <div 
+            id="line">
+            </div>
+            <a href="">
+                Forgoten?</a>
+         </div>
         </div>
-        </div>
-        <div class="middle-container">
-            <span>Or</span>
-        </div>
-        <div class="right-container">
-            <div><h3>Sign in with</h3></div>
-            <form action="index.js"method="GET">
-                <section>
-                    <div>
-                        <input type="text" placeholder="Username or email">
-                    </div>
-                    <div>
-                        <input type="password" placeholder="Password">
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" placeholder="Remember me">&nbsp;&nbsp;&nbsp;Remember me
-                    </div>
-                    <div class="login">
-                        <input class="submit-login" type="submit" value="Login"></type>
-                    </div>
-                </section>
-            </form>
-        </div>
-        <div class="bottom-container">
-            <div><a href=""></a></div>
-            <span></span>
-            <div><a href=""></a></div>
-        </div>
-    </div>
-
-    
-
+    </section> 
 </body>
 </html>

@@ -1,116 +1,190 @@
+/* main page reset default styles */
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+ } 
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 80vh;
+    width: 100vw;
+ }
+ /* out countainer size and display */
+ #out-container{
+    border: 1px black solid;
+    width: 34rem;
+    height: 20rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
-#out-container{
-    /* border: 2px solid black; */
-    width: 35rem;
+/* left-middle-right-bottom container sizing and display */
+/* the styles begin form left-middle-right-bottom */
+.left-container, .right-container {
+    width: 15.2rem;
     height: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+} 
+.middle-container{
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bottom-container{
-    position: absolute;
-    top: 13rem;
-    border: 1px solid red;
-    height: 1.8rem;
-    width: 35rem;
+    background-color: rgb(241, 237, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+    width: 32rem;
+    height: 2.5rem;
 }
-.right-container{
-    /* border: 2px solid green; */
-    position: absolute;
-    top: 0;
-    left: 19rem;
-    width: 15.8rem;
-    height: 13rem;
-}
-.left-container{
-    /* border: 2px solid purple; */
-    position: absolute;
-    width: 16rem;
-    height: 13rem;
-}
-.middle-container{
-    border-left: 1px solid gray;
-    position: absolute;
-    top:1.75rem;
-    left: 17.5rem;
-    height: 10rem;
-    
-}
+/* left container styles */
 .button1{
-    border-radius: 4px;
     border: solid 1px #4267B2;
     background: #4267B2;
     color: #FFF;
     padding: 1rem 3rem;
     text-decoration: none;
-    margin-left: 1rem;
+    margin-left: 0.6rem;
 }
 .button2{
-    border-radius: 4px;
     border: solid 1px rgb(160, 56, 56);
     background: rgb(160, 56, 56);
     color: #FFF;
-    padding: 1rem 3rem;
+    padding: 1rem 3.1rem;
     text-decoration: none;
-    margin-left: 1rem;
+    margin-left: 0.6rem;
 }
 .button3{
-    border-radius: 4px;
-    /* border: solid 1px #95b7e0; */
+    border: solid 1px #95b7e0;
     background: #96b7e0;
     color: #FFF;
-    padding: 1rem 3.4rem;
+    padding: 1rem 3.58rem;
     text-decoration: none;
-    margin-left: 1rem;
+    margin-left: 0.6rem;
 }
-#top{
+#top span{
+    border-left: 1px rgb(124, 121, 121) solid;
+    position: relative;
+    right: 0.5px
+}
+#middle span{
+    border-left: 1px rgb(124, 121, 121) solid;
+    position: relative;
+    right: 3.5px
+}
+#bottom span{
+    border-left: 1px rgb(124, 121, 121) solid;
+    position: relative;
+    right: 5.5px
+}
+/* this is the styles for the icon on the button*/
+i{
+    font-size: 1.5rem;
+    position: relative;
+    right: 10px;
+    top: 4px;
+}
+#bottom i{
+    position: relative;
+    right:16px;
+    top: 2px;
+}
+/* middle container styles */
+.middle-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px gray solid;
+    height: 13rem;
+    opacity: 0.7;
+}
+/* this is the span with the class or */
+.or{
     position: absolute;
-    top: 2rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px gray solid;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    justify-content: center;
 }
-#middle{
-    position: absolute;
-    top: 6rem;
+/* right container styles  */
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 1rem;
 }
-#bottom{
-    position: absolute;
-    top: 10rem;
-}
-section > div{
-    /* border: 2px solid black; */
-    margin-top: 2.4rem;
-}
-div input {
+.right-form form div input{
     border:none;
     border-bottom: solid 1px gray;
+    height: 2rem;
 }
-.login input{
+.username{
+    height:4rem;
+}
+.password{
+    height:4rem;
+}
+.checkbox{
     display: flex;
-    position: absolute;
-    left: 10rem;
-    top: 10.4rem;
+    justify-content: space-evenly;
+    align-items:center;
+    margin-right: 2.6rem;
+}
+.checkbox span{
+    margin-left: 1rem;
+}
+.submit-login{
     background-color: #4267B2;
     border-radius: 4px;
     border: none;
-    padding: 0.5rem 1rem
+    padding: 0.5rem 1.1rem
 }
-h3{
-    text-align: center;}
-.left-container span{
-   border-left:1px solid gray;
-}
-.middle-container span{
-  position: relative;
-  top:4rem;
-  right:12px;
-  border: 2px solid black;
-  border-radius: 100% ;
-  width: 3rem;
-  height: 3rem;
-  opacity: 1;
-} 
-.bottom-container > span{
+/* bottom container styles */
+.bottom-container{
     display: flex;
-    border-left:2px solid black;
-
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    margin-right: 2.2rem;
+    margin-left: 1rem;
+    opacity: 0.7;
 }
+/* #line is a div for the line between register now and forgoten */
+#line{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-left: 1px gray solid;
+    height: 1.3rem;
+}
+/* anchor pseudo classes */
+.left-container a:visited{
+    text-decoration: none;
+    color: white;
+}
+a:link{
+    text-decoration: none;
+}
+.bottom-container a:visited{
+    color: rgb(0, 119, 255);
+    text-decoration: none;
+}
+input{
+    outline: none;
+}
+
